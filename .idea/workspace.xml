@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c0f3154-a374-4671-878b-891ad3708de6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/stores/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/AuthGuard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/dashboard/CategoryForm.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/dashboard/Dashboard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/dashboard/ExpenseForm.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/customToast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/stores/expenses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/stores/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/stores/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +35,15 @@
         <option value="page" />
         <option value="+server" />
         <option value="+server.js" />
-        <option value="JavaScript File" />
         <option value="CombinedModal" />
         <option value="CSS File" />
+        <option value="Dashboard" />
+        <option value="ExpenseForm" />
+        <option value="Category" />
+        <option value="layout" />
+        <option value="AuthGuard" />
+        <option value="CustomToast" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,8 +68,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/user-auth",
-    "last_opened_file_path": "E:/github/expense-tracker-ui",
+    "git-widget-placeholder": "feature/dashboard",
+    "last_opened_file_path": "E:/github/expense-tracker-ui/src/routes/dashboard",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -68,6 +82,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\expense-tracker-ui\src\routes\dashboard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\github\expense-tracker-ui" />
       <recent name="E:\github\expense-tracker-ui\src" />
@@ -86,7 +103,7 @@
       <workItem from="1736860596526" duration="649000" />
       <workItem from="1736861834677" duration="78000" />
       <workItem from="1736861916402" duration="40000" />
-      <workItem from="1736861964374" duration="19681000" />
+      <workItem from="1736861964374" duration="37950000" />
     </task>
     <servers />
   </component>

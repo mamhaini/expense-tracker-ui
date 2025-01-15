@@ -54,11 +54,11 @@
     background-color: #0056b3;
 }
 
-label {
+.form-container label {
     margin-top: 10px;
 }
 
-input {
+.form-container input {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #555;
@@ -67,17 +67,21 @@ input {
     color: #fff;
 }
 
-
-.error {
-    color: #f00;
+.forgot-password {
+    display: block;
     margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
 }
 
-.success {
-    color: #0f0;
-    margin-top: 10px;
+.forgot-password:hover {
+    color: #007bff;
 }
-
 
 @media (max-width: 600px) {
     .modal {

@@ -1,5 +1,12 @@
 <script>
+    import AuthGuard from '$lib/components/AuthGuard.svelte';
+    import {SvelteToast} from '@zerodevx/svelte-toast'
+
     import "../app.css";
+
 </script>
 
-<slot />
+<AuthGuard redirectIfAuthenticated="/dashboard">
+    <slot/>
+</AuthGuard>
+<SvelteToast/>

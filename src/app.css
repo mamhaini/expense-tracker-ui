@@ -7,26 +7,19 @@ body {
     color: #f0f0f0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
 
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
+
 /* Button styles */
 button {
     background-color: #fff;
     color: #333;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     cursor: pointer;
     transition: color 0.3s, text-shadow 0.3s;
 }
@@ -44,3 +37,12 @@ button:hover {
 .icon:hover {
     fill: #007bff;
 }
+
+/* misc */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
