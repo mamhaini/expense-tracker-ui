@@ -3,6 +3,8 @@ import { writable } from 'svelte/store';
 import {jwtDecode} from 'jwt-decode';
 import { userStore } from './user';
 import Cookies from 'js-cookie';
+import {goto} from "$app/navigation";
+import { warning } from '$lib/customToast.js';
 
 function createAuthStore() {
     const { subscribe, set } = writable({ isAuthenticated: false, isRefreshing: false });
@@ -54,11 +56,12 @@ function createAuthStore() {
                 console.error('Failed to fetch user data:', error);
             }
         },
-        logout: () => {
+        logout: async () => {
             Cookies.remove('access_token');
             Cookies.remove('refresh_token');
             set({ isAuthenticated: false, isRefreshing: false });
             userStore.clearUser();
+            await goto('/');
         }
     };
 }

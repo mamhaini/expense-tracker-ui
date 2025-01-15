@@ -3,11 +3,11 @@
     import {isAuthenticated} from '$lib/stores/auth';
     import {failure, success} from "$lib/customToast.js";
     import './CombinedModal.css';
+    import { goto } from '$app/navigation';
 
 
     let email = '';
     let password = '';
-    let error = '';
     let isLogin = true;
     let showForgotPassword = false;
     let forgotPasswordEmail = '';
@@ -16,6 +16,8 @@
         try {
             const data = await loginUser(email, password);
             await isAuthenticated.login(data.access_token, data.refresh_token, email);
+            await goto('/dashboard');
+            success('Logged in successfully');
         } catch (err) {
             failure(err.message);
         }
@@ -24,11 +26,9 @@
     const handleRegister = async () => {
         try {
             await registerUser(email, password);
-            success('Account created successfully. Please login.');
+            success('Confirmation email sent.');
         } catch (err) {
-            toast.push(err.message, {
-                theme: 'error'
-            });
+            failure(err.message);
         }
     };
 

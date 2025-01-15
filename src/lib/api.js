@@ -1,4 +1,6 @@
+import Cookies from "js-cookie";
 import axios from 'axios';
+import { isAuthenticated } from '$lib/stores/auth.js';
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
@@ -7,6 +9,20 @@ const api = axios.create({
     headers: {
         'Content-Type': 'application/json',
     },
+});
+
+api.interceptors.request.use(async config => {
+    await isAuthenticated.checkAuth()
+    const token = Cookies.get('access_token');
+    if (token) {
+        config.headers = {
+            ...config.headers,
+            Authorization: `Bearer ${token}`
+        };
+    }
+    return config;
+}, error => {
+    return Promise.reject(error);
 });
 
 // Users-related functions
@@ -32,9 +48,6 @@ export const forgotPassword = async (email) => {
 export const loginUser = async (email, password) => {
     const data = {email, password};
     try {
-        console.log(data)
-        console.log(backendUrl)
-
         const response = await api.post('/login', data);
         return response.data;
     } catch (error) {
@@ -52,11 +65,10 @@ export const refreshToken = async (refresh_token) => {
     }
 };
 
-export const deleteUser = async (user_email, token) => {
+export const deleteUser = async (user_email) => {
     try {
-        const response = await api.delete(`/users/${user_email}`, {
-            headers: {Authorization: `Bearer ${token}`},
-        });
+        const response = await api.delete(`/users/${user_email}`);
+        await isAuthenticated.logout();
         return response.status === 204;
     } catch (error) {
         throw new Error(error.response?.data?.detail || 'Failed to delete user');

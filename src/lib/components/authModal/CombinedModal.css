@@ -32,6 +32,11 @@
     cursor: pointer;
     padding: 10px 20px;
     border-bottom: 2px solid transparent;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.tabs button:hover {
+    color: cyan;
 }
 
 .tabs button.active {
@@ -52,6 +57,7 @@
 
 .modal form button:hover {
     background-color: #0056b3;
+    color: cyan;
 }
 
 .form-container label {
