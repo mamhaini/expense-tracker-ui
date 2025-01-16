@@ -12,7 +12,6 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(async config => {
-    await isAuthenticated.checkAuth()
     const token = Cookies.get('access_token');
     if (token) {
         config.headers = {
@@ -139,6 +138,7 @@ export const getAllCategories = async () => {
     }
 };
 
+// We don't need this function in the frontend
 export const getCategoryByName = async (categoryName) => {
     try {
         const response = await api.get(`/categories/${categoryName}`);

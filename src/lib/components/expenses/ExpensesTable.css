@@ -1,0 +1,262 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions button {
+    margin-right: 10px;
+    background-color: #2a2929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.actions button:hover {
+    color: cyan;
+    background-color: #252424;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    table-layout: fixed;
+}
+
+@keyframes highlight-even {
+    0% {
+        background-color: #696969;
+        color: #f9f9f9;
+    }
+    100% {
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+@keyframes highlight-odd {
+    0% {
+        background-color: #151515;
+        color: #f9f9f9;
+    }
+    100% {
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+td select {
+    background-color: grey;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+td select option {
+    background-color: grey;
+    color: white;
+}
+
+td select:focus {
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+tr:nth-child(even) td select {
+    background-color: #595858;
+}
+
+tr:nth-child(odd) td select {
+    background-color: #252424;
+}
+
+tr:nth-child(even) td select:focus {
+    animation: highlight-even 1s forwards;
+}
+
+tr:nth-child(odd) td select:focus {
+    animation: highlight-odd 1s forwards;
+}
+
+tr:nth-child(even) td select option {
+    background-color: #595858;
+}
+
+tr:nth-child(odd) td select option {
+    background-color: #252424;
+}
+
+td.clickable {
+    cursor: pointer;
+}
+
+td input {
+    border: none;
+    background: none;
+    width: auto;
+    max-width: 100px;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    cursor: text;
+}
+
+td input:focus {
+    outline: none;
+}
+
+td strong {
+    pointer-events: None;
+    cursor: pointer;
+}
+
+th, td {
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+    width: 25%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: grey;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #3a5b5b;
+}
+
+th {
+    position: relative;
+    background-color: black;
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px;
+    text-align: left;
+}
+
+th input,
+th select {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border: none;
+    outline: none;
+}
+
+.recurring-filter {
+    display: flex;
+    align-items: center;
+}
+
+tr {
+    border-bottom: 1px solid #6c6a6a;
+}
+
+tr:nth-child(even) {
+    background-color: #595858;
+}
+
+tr:nth-child(odd) {
+    background-color: #252424;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+}
+
+
+.save-changes-button {
+    margin-top: 15px;
+    background-color: #2a2929;
+    color: white;
+}
+
+.save-changes-button:hover {
+    background-color: #252424;
+}
+
+@keyframes red-glow {
+    0% {
+        box-shadow: 0 0 5px red;
+    }
+    100% {
+        box-shadow: 0 0 20px red;
+    }
+}
+
+.deleted-row {
+    animation: red-glow 1s ease-in-out;
+}
+
+.payment-method::before {
+    content: "Payment Method";
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .save-changes-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .payment-method::before {
+        content: "Pay Method";
+    }
+}

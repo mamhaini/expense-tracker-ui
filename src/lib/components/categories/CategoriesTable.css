@@ -1,0 +1,145 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions button {
+    margin-left: 10px;
+    background-color: #2a2929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.actions button:hover {
+    color: cyan;
+    background-color: #252424;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    table-layout: fixed;
+}
+
+th, td {
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+    width: 50%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+tr:nth-child(even) {
+    background-color: #595858;
+}
+
+tr:nth-child(odd) {
+    background-color: #252424;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #2a2929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+button:hover {
+    color: cyan;
+    background-color: #252424;
+}
+
+@keyframes red-glow {
+    0% {
+        box-shadow: 0 0 5px red;
+    }
+    100% {
+        box-shadow: 0 0 20px red;
+    }
+}
+
+.deleted-row {
+    animation: red-glow 1s ease-in-out;
+}
+
+tr td button {
+    margin-right: 10px;
+    background-color: #2a2929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+tr td button:hover {
+    color: cyan;
+    background-color: #332e2e;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    table {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .add-category-button {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 20px);
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #2a2929;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .add-category-button:hover {
+        color: cyan;
+        background-color: #252424;
+    }
+}

@@ -1,25 +1,26 @@
 import { writable } from 'svelte/store';
 
 function createUserStore() {
-    let storedUser = null;
-    if (typeof localStorage !== 'undefined') {
-        storedUser = localStorage.getItem('user');
-    }
-    const { subscribe, set } = writable(storedUser ? JSON.parse(storedUser) : null);
+    const { subscribe, set } = writable(null, () => {
+        const storedUser = localStorage.getItem('user');
+        if (storedUser) {
+            set(JSON.parse(storedUser));
+        }
+    });
 
     return {
         subscribe,
-        setUser: (userData) => {
-            if (typeof localStorage !== 'undefined') {
-                localStorage.setItem('user', JSON.stringify(userData));
-            }
+        setUser: async (userData) => {
+            localStorage.setItem('user', JSON.stringify(userData));
             set(userData);
         },
-        clearUser: () => {
-            if (typeof localStorage !== 'undefined') {
-                localStorage.removeItem('user');
-            }
+        clearUser: async () => {
+            localStorage.removeItem('user');
             set(null);
+        },
+        loadUser: async () => {
+            const storedUser = localStorage.getItem('user');
+            set(storedUser ? JSON.parse(storedUser) : null);
         }
     };
 }

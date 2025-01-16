@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c0f3154-a374-4671-878b-891ad3708de6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/default_pfp.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/authModal/CombinedModal.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/dashboard/CategoryForm.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/dashboard/Dashboard.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/dashboard/ExpenseForm.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/customToast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/customToast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/AuthGuard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/AuthGuard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/expenses/ExpensesTable.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/expenses/ExpensesTable.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/stores/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/stores/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/dashboard/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +37,12 @@
         <option value="JavaScript File" />
         <option value="+layout" />
         <option value="_layout" />
-        <option value="CSS File" />
         <option value="expense" />
         <option value="ExpenseTable" />
+        <option value="category" />
+        <option value="UserLoader" />
+        <option value="CategoriesTable" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -72,23 +66,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/dashboard",
-    "last_opened_file_path": "E:/github/expense-tracker-ui/src/routes/dashboard/expenses",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\MG\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/dashboard&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/github/expense-tracker-ui/src/routes/dashboard/expenses&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\MG\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\github\expense-tracker-ui\src\routes\dashboard\expenses" />
@@ -97,11 +91,11 @@
       <recent name="E:\github\expense-tracker-ui\src\routes\dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github\expense-tracker-ui\src\lib\components" />
       <recent name="E:\github\expense-tracker-ui\src\lib\components\expenses" />
       <recent name="E:\github\expense-tracker-ui\src\routes\dashboard" />
       <recent name="E:\github\expense-tracker-ui\src\lib\components\dashboard" />
       <recent name="E:\github\expense-tracker-ui\src\lib\components\dashboard\expenses" />
-      <recent name="E:\github\expense-tracker-ui" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -117,6 +111,11 @@
       <workItem from="1736861916402" duration="40000" />
       <workItem from="1736861964374" duration="42972000" />
       <workItem from="1736948917518" duration="22815000" />
+      <workItem from="1736976941116" duration="10152000" />
+      <workItem from="1736987364290" duration="121000" />
+      <workItem from="1736987618193" duration="10304000" />
+      <workItem from="1737031084452" duration="1594000" />
+      <workItem from="1737032761108" duration="12727000" />
     </task>
     <servers />
   </component>
