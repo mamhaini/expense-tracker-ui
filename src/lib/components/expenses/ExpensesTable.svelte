@@ -204,8 +204,8 @@
 		</th>
 		<th>
 			Amount
-			<input type="number" placeholder="Filter" bind:value={filters.amount} />
-		</th>
+			<input type="number" placeholder="Filter" bind:value={filters.amount}
+						 on:input={(e) => filters.amount = e.target.value} /></th>
 		<th>
 			Category
 			<select bind:value={filters.category}>
