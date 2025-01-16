@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2c0f3154-a374-4671-878b-891ad3708de6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/AuthGuard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/AuthGuard.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/dashboard/_layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/expenses/ExpensesTable.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/expenses/ExpensesTable.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/stores/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/stores/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/categories/CategoriesTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/categories/CategoriesTable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/categories/CategoriesTable.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/categories/CategoriesTable.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dashboard/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +36,7 @@
         <option value="category" />
         <option value="UserLoader" />
         <option value="CategoriesTable" />
+        <option value="main" />
         <option value="CSS File" />
       </list>
     </option>
@@ -115,7 +110,7 @@
       <workItem from="1736987364290" duration="121000" />
       <workItem from="1736987618193" duration="10304000" />
       <workItem from="1737031084452" duration="1594000" />
-      <workItem from="1737032761108" duration="12727000" />
+      <workItem from="1737032761108" duration="16139000" />
     </task>
     <servers />
   </component>

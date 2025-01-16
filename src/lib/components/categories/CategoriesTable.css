@@ -100,6 +100,16 @@ tr td button:hover {
     background-color: #332e2e;
 }
 
+.add-category-button {
+    background-color: #2a2929;
+    color: white;
+}
+
+.add-category-button:hover {
+    color: cyan;
+    background-color: #252424;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -122,24 +132,4 @@ tr td button:hover {
         font-size: 14px;
     }
 
-    .add-category-button {
-        position: fixed;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: calc(100% - 20px);
-        max-width: 400px;
-        margin: 0 auto;
-        background-color: #2a2929;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: color 0.3s, text-shadow 0.3s;
-    }
-
-    .add-category-button:hover {
-        color: cyan;
-        background-color: #252424;
-    }
 }

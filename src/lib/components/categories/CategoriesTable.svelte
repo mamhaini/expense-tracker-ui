@@ -9,6 +9,11 @@
 	let newCategoryName = '';
 
 	const handleAddCategory = async () => {
+		if (newCategoryName.trim() === '') {
+			failure('Category name cannot be empty');
+			return;
+		}
+
 		try {
 			const newCategory = await createCategory({ name: newCategoryName });
 			categories = [...categories, newCategory];
