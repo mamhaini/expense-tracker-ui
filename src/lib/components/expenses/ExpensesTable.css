@@ -145,12 +145,13 @@ input[type="checkbox"]:checked {
 
 th {
     position: relative;
-    background-color: black;
-    color: grey;
+    background-color: #161616;
+    color: #d8d8d8;
     font-weight: bold;
     text-transform: uppercase;
     padding: 8px;
     text-align: left;
+    border-bottom: 1px solid #444;
 }
 
 th input,
